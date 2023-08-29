@@ -1,0 +1,27 @@
+
+<img class="wave" src="img/wave.png">
+<% if (message) { %>
+    <div class="message">
+      <%= message %>
+    </div>
+  <% } %>
+<div class="container">
+    <div class="img">
+        <img src="img/bg.svg">
+    </div>
+    <div class="login-content">
+        <form action="/forget" method="post" autocomplete="off">
+            <img style="margin-top: 20px;" src="img/avatar.svg">
+            <h2 class="title" style="font-size: 1.9rem; margin-top: 20px; margin-bottom: 50px;">Forget Password</h2>
+            <div class="input-div one">
+                <div class="i">
+                        <i class="fas fa-user"></i>
+                </div>
+                <div class="div">
+                        <h5>Email</h5>
+                        <input type="text" class="input" name="email">
+                </div>
+            </div>
+            <input type="submit" class="btn" value="Send Reset Link">
+        </form>
+    </div>

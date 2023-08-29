@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat';
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(56, 56, 56);
+    margin-top: -5rem;
+    
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.wrapper h1 {
+    font-size: 3rem;
+    
+}
+.wrapper .message {
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: center;
+    width: 60%;
+    
+}
+.btn {
+    background: rgb(88, 0, 202);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.btn:hover {background: rgb(132, 37, 255) ;}
+.copyRights {
+    margin-top: 60px;
+}
+
+.image-class {
+    width: 400px; /* This maintains the aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .image-class {
+        width: 100%; /* Make the image span the full width of its container on smaller screens */
+        height: auto;
+    }
+}
+/* Add animation to the message */
+.message {
+    font-size: 1.4rem;
+    text-align: center;
+    background: #3498db; /* Use a calming blue color */
+    display: block;
+    width: 40%;
+    margin:auto;
+    text-transform: capitalize;
+    padding: 1rem;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+/* Animation keyframes */
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.message:hover {
+    transform: scale(1.05);
+    background-color: #2980b9; /* A darker shade of blue on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,48 @@
+<img class="wave" src="img/wave.png">
+<% if (message) { %>
+    <div class="message">
+      <%= message %>
+    </div>
+  <% } %>
+<div class="container">
+    <div class="img">
+        <img src="img/bg.svg">
+    </div>
+    <div class="login-content">
+        <form action="/register" method="post" autocomplete="off">
+            <img src="img/avatar.svg">
+            <h2 class="title">Welcome</h2>
+
+            <div class="input-div one">
+                <div class="i">
+                        <i class="fas fa-user"></i>
+                </div>
+                <div class="div">
+                        <h5>Username</h5>
+                        <input type="text" class="input" name="name">
+                </div>
+            </div>
+
+            <div class="input-div one">
+                <div class="i">
+                        <i class="fas fa-user"></i>
+                </div>
+                <div class="div">
+                        <h5>Email</h5>
+                        <input type="text" class="input" name="email">
+                </div>
+            </div>
+
+            <div class="input-div pass">
+                <div class="i"> 
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="div">
+                    <h5>Password</h5>
+                    <input type="password" class="input" name="password">
+            </div>
+            </div>
+            <!-- <a href="#">Forgot Password?</a> -->
+            <input type="submit" class="btn" value="Register">
+        </form>
+    </div>
